@@ -1,3 +1,5 @@
+import java.util.concurrent.BrokenBarrierException;
+
 public class Simulation {
     private final Vehicle vehicle;
 
@@ -74,8 +76,13 @@ public class Simulation {
 
     public static void main(String[] args) {
         // create a new Simulation object with a random starting altitude
+        Simulation simulation = new Simulation(new Vehicle(2000));
+
         // create a new BurnInputStream
+        BurnInputStream burnInputStream = new BurnInputStream();
+
         // pass the new BurnInputStream to the runSimulation method
+        simulation.runSimulation(burnInputStream);
     }
 
 }
