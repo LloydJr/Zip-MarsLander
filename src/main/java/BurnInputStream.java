@@ -14,6 +14,10 @@ public class BurnInputStream implements BurnStream {
                 } catch (NumberFormatException e) {
                     System.err.println("Must Enter a Number (0-200)");
                 }
+//                if (status.Velocity == 1 || status.Velocity == 2) {
+//                    System.out.println("You landed!!!");
+//                    break;
+//                }
             }
         }
         return 0;

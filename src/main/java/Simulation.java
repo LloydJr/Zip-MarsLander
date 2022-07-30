@@ -10,8 +10,8 @@ public class Simulation {
     static String version = "2.0"; /* The Version of the program */
 
     public static int randomaltitude() {
-        int max = 20000;
-        int min = 10000;
+        int max = 2000;
+        int min = 1000;
         int r = (int)(Math.random() * (max - min)) + min;
         return (r % 15000 + 4000);
     }
@@ -76,7 +76,7 @@ public class Simulation {
 
     public static void main(String[] args) {
         // create a new Simulation object with a random starting altitude
-        Simulation simulation = new Simulation(new Vehicle(2000));
+        Simulation simulation = new Simulation(new Vehicle());
 
         // create a new BurnInputStream
         BurnInputStream burnInputStream = new BurnInputStream();
